@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+
+    THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
+    FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
+
+-->
+
+<synthetic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.xebialabs.com/deployit/synthetic" xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
+
+    <type type="circleci.Server" extends="configuration.HttpConnection">
+    </type>
+
+    <type type="circleci.Task" extends="xlrelease.PythonScript" virtual="true">
+        <!-- Plugin -->
+        <property name="iconLocation" hidden="true" default="circleci/circleci.png"/>
+        <property name="taskColor" hidden="true" default="#229922"/>
+        <property name="server" category="input" label="Server" description="The Circle CI server definition to use" required="true" referenced-type="circleci.Server" kind="ci"/>
+        <property name="token" category="input" required="false" description="Override the global configured token for authentication."/>
+    </type>
+
+    <type type="circleci.GetUser" extends="circleci.Task">
+        <!-- Outputs -->
+        <property name="basicEmailPrefs" category="output" label="Basic Email Preferences" description="The Basic email prefs" kind="string" />
+        <property name="login" category="output" label="Login" description="Your github username" kind="string" />
+    </type>
+
+
+</synthetic>
