@@ -10,7 +10,7 @@ This plugin offers an interface from XL Release to Circle CI.
 
 [xlr-circleci-plugin-travis-image]: https://travis-ci.org/xebialabs-community/xlr-circleci-plugin.svg?branch=master
 [xlr-circleci-plugin-travis-url]: https://travis-ci.org/xebialabs-community/xlr-circleci-plugin
-[xlr-circleci-plugin-codacy-image]: https://api.codacy.com/project/badge/Grade/da9c2f00342c40ad8efc7fbd1aaec063
+[xlr-circleci-plugin-codacy-image]: https://api.codacy.com/project/badge/Grade/a76c515de76640fc9e1f282575382937
 [xlr-circleci-plugin-codacy-url]: https://www.codacy.com/app/joris-dewinne/xlr-circleci-plugin
 [xlr-circleci-plugin-code-climate-image]: https://codeclimate.com/github/xebialabs-community/xlr-circleci-plugin/badges/gpa.svg
 [xlr-circleci-plugin-code-climate-url]: https://codeclimate.com/github/xebialabs-community/xlr-circleci-plugin
