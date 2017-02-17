@@ -26,5 +26,18 @@
         <property name="login" category="output" label="Login" description="Your github username" kind="string" />
     </type>
 
+    <type type="circleci.TriggerBuild" extends="circleci.Task">
+        <!-- Inputs -->
+        <property name="username" category="input" kind="string" label="Username"/>
+        <property name="vcs" category="input" label="Version Control System"/>
+        <property name="project" category="input"/>
+        <property name="branch" default="master" category="input"/>
+        <property name="wait" category="input" label="Wait for build?" kind="boolean"/>
+        <property name="waitInterval" category="input" default="60" label="Wait Interval (sec)"/>
+
+        <!-- Outputs -->
+        <property name="buildNumber" category="output" label="Build Number" description="The number of the triggered build." kind="string" />
+        <property name="buildResult" category="output" label="Build Result" description="The outcome of the triggered build." kind="string" />
+    </type>
 
 </synthetic>

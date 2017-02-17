@@ -24,6 +24,8 @@ This plugin offers an interface from XL Release to Circle CI.
     + `username`: Use this property to define the token as described in [Authentication](https://circleci.com/docs/api/#authentication)
 + `circleci.GetUser`: Provides information about the signed in user
     + Implements the api call as described in [User](https://circleci.com/docs/api/#user)
++ `circleci.TriggerBuild`: Triggers a build of the specified project and branch.
+    + Implements the api call as described in [Trigger a new Build with a Branch](https://circleci.com/docs/api/#new-build-branch)
     
 # References #
 [Circle CI api](https://circleci.com/docs/api/)
