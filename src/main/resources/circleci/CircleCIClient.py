@@ -9,7 +9,7 @@ from xlrelease.HttpRequest import HttpRequest
 
 class CircleCiClient(object):
     def __init__(self, http_connection, token=None):
-        self.http_request = HttpRequest(http_connection, token)
+        self.http_request = HttpRequest(http_connection, token, "") # Should not have to pass the empty P/W string, will work on fix.
 
     @staticmethod
     def create_client(http_connection, token=None):
