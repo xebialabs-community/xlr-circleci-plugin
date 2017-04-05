@@ -16,7 +16,7 @@
         <!-- Plugin -->
         <property name="iconLocation" hidden="true" default="circleci/circleci.png"/>
         <property name="taskColor" hidden="true" default="#229922"/>
-        <property name="server" category="input" label="Server" description="The Circle CI server definition to use" required="true" referenced-type="circleci.Server" kind="ci"/>
+        <property name="server" category="input" label="Server" description="The CircleCI server definition to use" required="true" referenced-type="circleci.Server" kind="ci"/>
         <property name="token" category="input" required="false" description="Override the global configured token for authentication."/>
     </type>
 
