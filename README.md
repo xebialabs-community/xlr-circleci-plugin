@@ -1,6 +1,6 @@
 # xlr-circleci-plugin
 
-This plugin offers an interface from XL Release to Circle CI. 
+This plugin offers an interface from XL Release to CircleCI. 
 
 # CI status #
 
@@ -23,13 +23,13 @@ This plugin offers an interface from XL Release to Circle CI.
 * Start XLR: `./gradlew runDockerCompose`
 
 # Type definitions #
-+ `circleci.Server`: Defines your Circle CI endpoint to be used.
-    + `username`: Use this property to define the token as described in [Authentication](https://circleci.com/docs/api/#authentication)
++ `circleci.Server`: Defines your CircleCI endpoint to be used.
+    + `username`: Use this property to define the token as described in [Authentication](https://circleci.com/docs/api/v1-reference/#authentication)
 + `circleci.GetUser`: Provides information about the signed in user
-    + Implements the api call as described in [User](https://circleci.com/docs/api/#user)
+    + Implements the api call as described in [User](https://circleci.com/docs/api/v1-reference/#user)
 + `circleci.TriggerBuild`: Triggers a build of the specified project and branch.
-    + Implements the api call as described in [Trigger a new Build with a Branch](https://circleci.com/docs/api/#new-build-branch)
+    + Implements the api call as described in [Trigger a new Build with a Branch](https://circleci.com/docs/api/v1-reference/#new-build-branch)
     
 # References #
-[Circle CI api](https://circleci.com/docs/api/)
+[CircleCI API](https://circleci.com/docs/api/)
 
